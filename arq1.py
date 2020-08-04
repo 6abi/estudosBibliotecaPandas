@@ -23,7 +23,6 @@ df2 = pd.DataFrame({"A":7,
                     'E': pd.Categorical(["test", "train", "test", "train"]),
                     'F': 'Python'
                     })
-
 print(df2)
 
 #criação de novas colunas em um dataframe existente
