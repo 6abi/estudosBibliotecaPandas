@@ -14,3 +14,6 @@ print(x)
 y = df.iloc[[1,5,7],[0,3]]
 print(y)
 
+#filtrando valores,valores maior do que 0 na coluna A
+xx = df[df.A > 0]
+print(xx)
