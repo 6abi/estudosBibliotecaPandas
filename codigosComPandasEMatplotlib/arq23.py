@@ -23,4 +23,5 @@ plt.ylabel('Idade', size = 18)
 
 #plot de todos os dados
 df.plot()
+plt.savefig('../codigosComPandasEMatplotlib/titanic/linha.png', transparent = True)
 plt.show()

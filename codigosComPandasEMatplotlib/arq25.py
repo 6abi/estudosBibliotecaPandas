@@ -8,11 +8,11 @@ plt.rcParams['figure.figsize'] = (15,7)
 df = pd.read_csv('../codigosComPandasEMatplotlib/titanic/train.csv')
 print(df.head(5))
 print(df.shape)
+print(df.Age.describe)
 
-
-#Scatter plot
-#grafico de dispersão
-plt.scatter(df.PassengerId, df.Age, marker= '+')
-plt.savefig('../codigosComPandasEMatplotlib/titanic/dispersao.png', transparent = True)
-
+#plotagem de histograma
+df.Age.hist()
+plt.xlabel('idade')
+plt.ylabel('Frequência observada')
+plt.savefig('../codigosComPandasEMatplotlib/titanic/hitograma.png', transparent = True)
 plt.show()
